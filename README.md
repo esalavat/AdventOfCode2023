@@ -11,6 +11,11 @@ For example, to run day1 prob1 use:
 
 # Solutions
 
+## Day2
+### Problem1
+
+I made an enum that stores the colors with the max allowed.  Then just loop through each line, parse out the info needed and store the max of each color for each game.  Then at the end I check all the maxes against what's allowed and count up the game ID sum.
+
 ## Day1
 ### Problem1
 
