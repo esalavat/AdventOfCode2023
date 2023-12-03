@@ -7,8 +7,8 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Map.Entry;
 
-public class prob1 {
- 
+public class prob2 {
+
     private static enum Color {
         red(12),
         green(13),
@@ -60,18 +60,10 @@ public class prob1 {
 
             boolean possible = true;
 
-            for (Entry<Color,Integer> entrySet : maxCounts.entrySet()) {
-                Color color = entrySet.getKey();
-                int value = entrySet.getValue();
+            int power = maxCounts.values().stream() .reduce(1, (a,b) -> a*b);
 
-                if(value > color.getMax()) {
-                    possible = false;
-                }
-            }
-
-            if(possible) {
-                sum += gameNum;
-            }
+            sum += power;
+            
         }
 
         System.out.println(sum);
