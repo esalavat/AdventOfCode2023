@@ -11,6 +11,11 @@ For example, to run day1 prob1 use:
 
 # Solutions
 
+## Day 4
+### Problem 1
+
+I just line by line use string.split to split them into the groups of numbers.  Then loop through my numbers and check if they're in the winning numbers.  Then add them up(multiply by 2 each time) and get the answer.
+
 ## Day 3
 ### Problem 1
 
