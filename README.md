@@ -16,6 +16,10 @@ For example, to run day1 prob1 use:
 
 I loaded the input file into a List<List<Character>> because it's basically an array that can grow in size, then converted that to a Character[][] 2d array.  Then we loop through that 2d array and keep track of any numbers, and when we're on a number spot we check if any symbols are adjacent to it.  Then just sum up the ones that have symbols next to them.
 
+### Problem 2
+
+Taking the first part of problem 1, I redid the loop to look for *(Gears) instad of numbers and symbols.  From those positions I got a set of all adjacent number digits.  Then I looped through those digits and traveled left and right in the x direction to build the full number.  While doing this I had to make sure we didn't double count any of the adjacent digits again as new numbers so I built an ignore list if I hit those numbers while building another number.
+
 ## Day 2
 ### Problem 1
 
