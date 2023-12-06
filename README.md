@@ -11,10 +11,23 @@ For example, to run day1 prob1 use:
 
 # Solutions
 
+## Day 5
+### Problem 1
+
+I got all the seeds from the file.  Then made a map of mappings from the rest of the sections.
+
+Then I just go through each mapping and look at all of the seeds and apply the mapping.  I keep track of which ones have already been mapped in each section so that they don't get double mapped.  
+
+Then at the end I find the min.
+
 ## Day 4
 ### Problem 1
 
 I just line by line use string.split to split them into the groups of numbers.  Then loop through my numbers and check if they're in the winning numbers.  Then add them up(multiply by 2 each time) and get the answer.
+
+### Problem 2
+
+I added a Map<Integer, Integer> to keep track of how many of each card I have, then just add to those counts as I go through the winnings and sum it up at the end.
 
 ## Day 3
 ### Problem 1
