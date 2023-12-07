@@ -20,6 +20,10 @@ Then I just go through each mapping and look at all of the seeds and apply the m
 
 Then at the end I find the min.
 
+### Problem 2
+
+I tried to add all the other seeds to my List<Long> of seeds and just brute force it, but I ran out of memory.  So instead of figuring out something smart, I just removed the List<Long> and process each seed as I go.  It's still brute force but got me the right answer.
+
 ## Day 4
 ### Problem 1
 
