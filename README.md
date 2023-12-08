@@ -11,6 +11,10 @@ For example, to run day1 prob1 use:
 
 # Solutions
 
+## Day 6
+### Problem 1
+I load in the data.  Then loop through each race and check from both ends.  I count the number of losing races from the front until I see one where we win, then go from the back and do the same.  Then I take the total minus the losses and that's the answer.
+
 ## Day 5
 ### Problem 1
 
